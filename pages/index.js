@@ -13,9 +13,10 @@ export default function Home() {
     <>
       <Head>
         <title>Moloch Comic</title>
-        <meta>
-          Made by Mackenzie @ Raidguild for Gitcoin, Raidguild, and the world
-        </meta>
+        <meta
+          name="author"
+          content="Made by Mackenzie @ Raidguild for Gitcoin, Raidguild, and the world"
+        />
       </Head>
       <Box
         sx={{
