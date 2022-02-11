@@ -15,7 +15,7 @@ export default function Home() {
         <title>Moloch Comic</title>
         <meta
           name="author"
-          content="Made by Mackenzie @ Raidguild for Gitcoin, Raidguild, and the world"
+          content="Site Made by Mackenzie @ Raidguild for Gitcoin, Raidguild, and the world"
         />
       </Head>
       <Box
@@ -65,17 +65,9 @@ export default function Home() {
           <Image src="/NFT_2.jpg" alt="" />
           <Image src="/NFT_3.jpg" alt="" />
           <Image src="/NFT_4.jpg" alt="" />
-        </Box>
-        <Box
-          sx={{
-            display: `grid`,
-            gridTemplateColumns: [`1fr`],
-            maxWidth: [`90%`, `clamp(500px, 80vw, 1200px)`],
-          }}
-        >
           <Image src="/NFT_5.jpg" alt="" />
+          <Image src="/NFT_6.jpg" alt="" />
         </Box>
-
         <Box
           sx={{
             minHeight: `5px`,
