@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 
 export default function Home() {
   const CopyAddress = async () => {
-    const res = await navigator.clipboard.writeText("ADDRESS");
+    const res = await navigator.clipboard.writeText("multisig.gitcoindao.eth");
     console.log(res);
     toast.success("Address In Clipboard");
   };
@@ -36,7 +36,7 @@ export default function Home() {
           backgroundColor: ` #D44D6E`,
         }}
       ></Box>
-      <Heading
+      {/* <Heading
         sx={{
           fontFamily: `'Uncial Antiqua', serif`,
           color: `white`,
@@ -45,13 +45,36 @@ export default function Home() {
         }}
       >
         Browse Art
-      </Heading>
+      </Heading> */}
+      <Box
+        sx={{
+          display: `grid`,
+          gridTemplateColumns: [`1fr`, `1fr 1fr`],
+          maxWidth: [`90%`, `clamp(500px, 80vw, 1200px)`],
+          gap: `3rem`,
+        }}
+      >
+        <Image src="/NFT_1.jpg" alt="" />
+        <Image src="/NFT_2.jpg" alt="" />
+        <Image src="/NFT_3.jpg" alt="" />
+        <Image src="/NFT_4.jpg" alt="" />
+      </Box>
+      <Box
+        sx={{
+          display: `grid`,
+          gridTemplateColumns: [`1fr`],
+          maxWidth: [`90%`, `clamp(500px, 80vw, 1200px)`],
+        }}
+      >
+        <Image src="/NFT_5.jpg" alt="" />
+      </Box>
+
       <Box
         sx={{
           minHeight: `5px`,
           width: `clamp(20px, 50ch, 50vw)`,
           margin: `1vmin auto`,
-          backgroundColor: ` #D44D6E`,
+          backgroundColor: `#D44D6E`,
         }}
       ></Box>
       <Box
