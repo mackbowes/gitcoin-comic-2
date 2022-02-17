@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Box, Text, Heading, Button, Image } from "@chakra-ui/react";
+import { Box, Text, Heading, Button, Image, Link } from "@chakra-ui/react";
 import VideoComponent from "../components/VideoComponent/VideoComponent";
 import toast from "react-hot-toast";
 
@@ -56,17 +56,40 @@ export default function Home() {
         <Box
           sx={{
             display: `grid`,
+            gridTemplateColumns: `1fr`,
+            maxWidth: [`90%`, `clamp(500px, 80vw, 1200px)`],
+          }}
+        >
+          <Link href="https://doingud.com/creation/0xb3c50cf10aaa7b2ca07a40927c4e223c66f3b726000000000000">
+            <Image src="/COVER-lowres.jpg" alt="" />
+          </Link>
+        </Box>
+        <Box
+          sx={{
+            display: `grid`,
             gridTemplateColumns: [`1fr`, `1fr 1fr`],
             maxWidth: [`90%`, `clamp(500px, 80vw, 1200px)`],
             gap: `3rem`,
           }}
         >
-          <Image src="/NFT_1.jpg" alt="" />
-          <Image src="/NFT_2.jpg" alt="" />
-          <Image src="/NFT_3.jpg" alt="" />
-          <Image src="/NFT_4.jpg" alt="" />
-          <Image src="/NFT_5.jpg" alt="" />
-          <Image src="/NFT_6.jpg" alt="" />
+          <Link href="https://doingud.com/creation/0xb3c50cf10aaa7b2ca07a40927c4e223c66f3b726000000000004">
+            <Image src="/NFT_1.jpg" alt="" />
+          </Link>
+          <Link href="https://doingud.com/creation/0xb3c50cf10aaa7b2ca07a40927c4e223c66f3b726000000000007">
+            <Image src="/NFT_2.jpg" alt="" />
+          </Link>
+          <Link href="https://doingud.com/creation/0xb3c50cf10aaa7b2ca07a40927c4e223c66f3b726000000000006">
+            <Image src="/NFT_3.jpg" alt="" />
+          </Link>
+          <Link href="https://doingud.com/creation/0xb3c50cf10aaa7b2ca07a40927c4e223c66f3b726000000000005">
+            <Image src="/NFT_4.jpg" alt="" />
+          </Link>
+          <Link href="https://doingud.com/creation/0xb3c50cf10aaa7b2ca07a40927c4e223c66f3b726000000000003">
+            <Image src="/NFT_5.jpg" alt="" />
+          </Link>
+          <Link href="https://doingud.com/creation/0xb3c50cf10aaa7b2ca07a40927c4e223c66f3b726000000000002">
+            <Image src="/NFT_6.jpg" alt="" />
+          </Link>
         </Box>
         <Box
           sx={{
